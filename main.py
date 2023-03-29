@@ -3,7 +3,7 @@ import os
 pygame.font.init()
 pygame.mixer.init()
 
-WIDTH, HEIGHT = 900, 500
+WIDTH, HEIGHT = 1500, 800
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("First Game!")
 
@@ -24,7 +24,7 @@ FPS = 60
 VEL = 5
 BULLET_VEL = 7
 MAX_BULLETS = 5
-SPACESHIP_WIDTH, SPACESHIP_HEIGHT = 55, 40
+SPACESHIP_WIDTH, SPACESHIP_HEIGHT = 80, 70
 
 YELLOW_HIT = pygame.USEREVENT + 1
 RED_HIT = pygame.USEREVENT + 2
@@ -116,8 +116,8 @@ def draw_winner(text):
 
 
 def main():
-    red = pygame.Rect(700, 300, SPACESHIP_WIDTH, SPACESHIP_HEIGHT)
-    yellow = pygame.Rect(100, 300, SPACESHIP_WIDTH, SPACESHIP_HEIGHT)
+    red = pygame.Rect(1300, 350, SPACESHIP_WIDTH, SPACESHIP_HEIGHT)
+    yellow = pygame.Rect(100, 350, SPACESHIP_WIDTH, SPACESHIP_HEIGHT)
 
     red_bullets = []
     yellow_bullets = []
